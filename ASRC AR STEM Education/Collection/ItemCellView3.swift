@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieCell: UICollectionViewCell {
+class ItemCellView3: UICollectionViewCell {
     @IBOutlet var itemImage: UIImageView!
     
     override func awakeFromNib() {
