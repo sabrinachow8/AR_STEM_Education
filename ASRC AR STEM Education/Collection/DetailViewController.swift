@@ -21,8 +21,13 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         itemName.text = itemTitle
-        itemPicture.image = UIImage(named: itemPicName!)
         longDescription.text = itemDescription
+        
+        // Formatting the image
+        itemPicture.image = UIImage(named: itemPicName!)
+        itemPicture.layer.borderWidth = 3
+        itemPicture.layer.borderColor = UIColor(red: 59/255, green: 86/255, blue: 160/255, alpha: 1).cgColor
+        itemPicture.layer.cornerRadius = 10
     }
     
 }

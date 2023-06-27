@@ -11,11 +11,13 @@ struct Item {
     var name : String = ""
     var pictureName : String = ""
     var description : String = ""
+    var isEnabled : Bool = false
     
-    init(name: String, pictureName: String, description: String){
+    init(name: String, pictureName: String, description: String, isEnabled: Bool){
         self.pictureName = pictureName
         self.name = name
         self.description = description
-        
+        self.isEnabled = isEnabled
     }
 }
+

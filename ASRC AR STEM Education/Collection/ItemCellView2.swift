@@ -9,6 +9,7 @@ import UIKit
 
 class ItemCellView2: UICollectionViewCell {
     @IBOutlet var itemImage: UIImageView!
+    @IBOutlet var itemCover: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
