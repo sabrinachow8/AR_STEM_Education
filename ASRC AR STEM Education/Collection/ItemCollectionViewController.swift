@@ -21,8 +21,6 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
     let collectionView2Identifier = "CollectionView2Cell"
     let collectionView3Identifier = "CollectionView3Cell"
     
-    var disableAll = false
-    
     
     // MARK: Collection data
     
@@ -107,7 +105,7 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
             if itemSet1[indexPath.row].isEnabled {
                 currentCell.itemCover.backgroundColor = UIColor(white: 1, alpha: 0)
             } else {
-                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.5)
+                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.6)
             }
             return currentCell
         } else if collectionView == self.collectionView2 {
@@ -119,7 +117,7 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
             if itemSet2[indexPath.row].isEnabled {
                 currentCell.itemCover.backgroundColor = UIColor(white: 1, alpha: 0)
             } else {
-                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.5)
+                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.6)
             }
             return currentCell
         } else {
@@ -131,14 +129,14 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
             if itemSet3[indexPath.row].isEnabled {
                 currentCell.itemCover.backgroundColor = UIColor(white: 1, alpha: 0)
             } else {
-                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.5)
+                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.6)
             }
             return currentCell
         }
     }
     
     
-    // MARK: - See detail of item
+    // MARK: - See detail of item (via segue)
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         var currentItem = itemSet3[indexPath.row]
@@ -165,37 +163,36 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
     
     // MARK: - Adjust collection data
     
-    func resetAll() {
-        disableAll = true
+    func updateData() {
+        // Update CollectionViews
+        collectionView1.reloadData()
+        collectionView2.reloadData()
+        collectionView3.reloadData()
+        
+        // Changing label text
+        var numLeft = 0
+        for item in itemSetAll {
+            if !item.isEnabled {
+                numLeft += 1
+            }
+        }
+        remainingLabel.text = "Remaining: " + String(numLeft) + "/" + String(itemSetAll.count)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // Reset all
-        if disableAll {
-            for index in 0...(itemSetAll.count - 1) {
-                itemSetAll[index].isEnabled = false
-            }
-            
-            // Update CollectionViews
-            collectionView1.reloadData()
-            collectionView2.reloadData()
-            collectionView3.reloadData()
-            
-            // Changing label text
-            var numLeft = 0
-            for item in itemSetAll {
-                if !item.isEnabled {
-                    numLeft += 1
-                }
-            }
-            remainingLabel.text = "Remaining: " + String(numLeft) + "/" + String(itemSetAll.count)
+    func resetAll() {
+        for index in 0...(itemSetAll.count - 1) {
+            itemSetAll[index].isEnabled = false
         }
-        /*
-         else if
-         
-         */
+        updateData()
+    }
+    
+    func unlockItem(_ itemName: String) {
+        for index in 0...(itemSetAll.count - 1) {
+            if itemSetAll[index].name == itemName {
+                itemSetAll[index].isEnabled = true
+            }
+        }
+        updateData()
     }
     
 }
