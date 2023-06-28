@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Item {
+class Item {
     var name : String = ""
     var pictureName : String = ""
     var description : String = ""
-    var isEnabled : Bool = false
+    var isEnabled = false
     
     init(name: String, pictureName: String, description: String, isEnabled: Bool){
         self.pictureName = pictureName

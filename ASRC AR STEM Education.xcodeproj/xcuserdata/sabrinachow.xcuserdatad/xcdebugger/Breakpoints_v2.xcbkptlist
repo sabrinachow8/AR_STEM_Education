@@ -148,5 +148,277 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF396C4D-6A2F-43A2-9A0E-1EA8C5E0C38A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "resetAll()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39A8F781-FEC5-4712-AE8A-EA756EB01781"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "resetAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39A8F781-FEC5-4712-AE8A-EA756EB01781 - 86e4ebff0308adba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "1068">
+               </Location>
+               <Location
+                  uuid = "39A8F781-FEC5-4712-AE8A-EA756EB01781 - 3c386e40479df41e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.resetAll() -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2E6519D-28A9-4597-8EA8-5219E85BAA3D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D496316-167F-4DE1-986F-78D785EE0AE8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3D496316-167F-4DE1-986F-78D785EE0AE8 - 9d6364a643e46459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "3D496316-167F-4DE1-986F-78D785EE0AE8 - 9d6364a643e46459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "930F334E-62BC-4202-868E-23C100F60943"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "173574DD-C65C-4079-A2CF-0F80E0975423"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "173574DD-C65C-4079-A2CF-0F80E0975423 - b196979dd312f164"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "173574DD-C65C-4079-A2CF-0F80E0975423 - b196979dd312f164"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "550E210D-A6B8-409C-97ED-9A2D1EDF4840"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "550E210D-A6B8-409C-97ED-9A2D1EDF4840 - 9d6364a643e463cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "1476">
+               </Location>
+               <Location
+                  uuid = "550E210D-A6B8-409C-97ED-9A2D1EDF4840 - 9d6364a643e463cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ItemCollectionViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/Collection/ItemCollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "932">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98F50196-54A1-4EE0-A680-1BA83E4DF80C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1B3C63C-2105-4AC3-9783-7E11E1343942"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/Collection/ItemCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

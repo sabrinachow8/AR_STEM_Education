@@ -21,6 +21,8 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
     let collectionView2Identifier = "CollectionView2Cell"
     let collectionView3Identifier = "CollectionView3Cell"
     
+    var disableAll = false
+    
     
     // MARK: Collection data
     
@@ -42,10 +44,10 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
     var model15 = Item(name: "model 15", pictureName: "model 15", description: "desc for model 15", isEnabled: false)
     
     // Groups of items
-    private var itemSet1 = [Item]()
-    private var itemSet2 = [Item]()
-    private var itemSet3 = [Item]()
-    private var itemSetAll = [Item]()
+    var itemSet1 = [Item]()
+    var itemSet2 = [Item]()
+    var itemSet3 = [Item]()
+    var itemSetAll = [Item]()
     
     
     // MARK: Setting up the collection view
@@ -63,7 +65,6 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
         self.view.addSubview(collectionView2)
         self.view.addSubview(collectionView3)
         
-        
         // Setting up groups of data
         self.itemSet1 = [model1, model2, model3, model4, model5]
         self.itemSet2 = [model6, model7, model8, model9, model10]
@@ -79,7 +80,7 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
                 numLeft += 1
             }
         }
-        remainingLabel.text = "Remaining: " + String(numLeft) + "/15"
+        remainingLabel.text = "Remaining: " + String(numLeft) + "/" + String(itemSetAll.count)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -105,6 +106,8 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
             // Changing image opacity if needed
             if itemSet1[indexPath.row].isEnabled {
                 currentCell.itemCover.backgroundColor = UIColor(white: 1, alpha: 0)
+            } else {
+                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.5)
             }
             return currentCell
         } else if collectionView == self.collectionView2 {
@@ -113,6 +116,11 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
             currentCell.itemImage.layer.borderWidth = 2
             currentCell.itemImage.layer.borderColor = UIColor(red: 59/255, green: 86/255, blue: 160/255, alpha: 1).cgColor
             currentCell.itemImage.layer.cornerRadius = 5
+            if itemSet2[indexPath.row].isEnabled {
+                currentCell.itemCover.backgroundColor = UIColor(white: 1, alpha: 0)
+            } else {
+                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.5)
+            }
             return currentCell
         } else {
             let currentCell = collectionView3.dequeueReusableCell(withReuseIdentifier: "itemCell3", for: indexPath) as! ItemCellView3
@@ -120,6 +128,11 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
             currentCell.itemImage.layer.borderWidth = 2
             currentCell.itemImage.layer.borderColor = UIColor(red: 59/255, green: 86/255, blue: 160/255, alpha: 1).cgColor
             currentCell.itemImage.layer.cornerRadius = 5
+            if itemSet3[indexPath.row].isEnabled {
+                currentCell.itemCover.backgroundColor = UIColor(white: 1, alpha: 0)
+            } else {
+                currentCell.itemCover.backgroundColor = UIColor(red: 36/255, green: 57/255, blue: 126/255, alpha: 0.5)
+            }
             return currentCell
         }
     }
@@ -147,6 +160,42 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
             destination.itemPicName = specificSender.pictureName
             destination.itemDescription = specificSender.description
         }
+    }
+    
+    
+    // MARK: - Adjust collection data
+    
+    func resetAll() {
+        disableAll = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Reset all
+        if disableAll {
+            for index in 0...(itemSetAll.count - 1) {
+                itemSetAll[index].isEnabled = false
+            }
+            
+            // Update CollectionViews
+            collectionView1.reloadData()
+            collectionView2.reloadData()
+            collectionView3.reloadData()
+            
+            // Changing label text
+            var numLeft = 0
+            for item in itemSetAll {
+                if !item.isEnabled {
+                    numLeft += 1
+                }
+            }
+            remainingLabel.text = "Remaining: " + String(numLeft) + "/" + String(itemSetAll.count)
+        }
+        /*
+         else if
+         
+         */
     }
     
 }
