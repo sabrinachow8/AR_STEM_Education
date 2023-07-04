@@ -212,5 +212,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "920FD384-BB50-4554-8032-A5C8B5B5AC77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ASRC AR STEM Education/AR/ARViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "920FD384-BB50-4554-8032-A5C8B5B5AC77 - 326f3318057dfa62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ARViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/AR/ARViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "920FD384-BB50-4554-8032-A5C8B5B5AC77 - 326f3318057dfa62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ASRC_AR_STEM_Education.ARViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ASRC AR STEM Education"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabrinachow/Documents/VR-REU/ASRC%20AR%20STEM%20Education/ASRC%20AR%20STEM%20Education/AR/ARViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "980">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
