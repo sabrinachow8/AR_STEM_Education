@@ -25,21 +25,21 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
     // MARK: Collection data
     
     // All items
-    var model1 = Item(name: "model 1", pictureName: "model 1", description: "desc for model 1", isEnabled: true)
-    var model2 = Item(name: "model 2", pictureName: "model 2", description: "desc for model 2", isEnabled: false)
-    var model3 = Item(name: "model 3", pictureName: "model 3", description: "desc for model 3", isEnabled: false)
-    var model4 = Item(name: "model 4", pictureName: "model 4", description: "desc for model 4", isEnabled: false)
-    var model5 = Item(name: "model 5", pictureName: "model 5", description: "desc for model 5", isEnabled: false)
-    var model6 = Item(name: "model 6", pictureName: "model 6", description: "desc for model 6", isEnabled: false)
-    var model7 = Item(name: "model 7", pictureName: "model 7", description: "desc for model 7", isEnabled: false)
-    var model8 = Item(name: "model 8", pictureName: "model 8", description: "desc for model 8", isEnabled: false)
-    var model9 = Item(name: "model 9", pictureName: "model 9", description: "desc for model 9", isEnabled: false)
-    var model10 = Item(name: "model 10", pictureName: "model 10", description: "desc for model 10", isEnabled: false)
-    var model11 = Item(name: "model 11", pictureName: "model 11", description: "desc for model 11", isEnabled: false)
-    var model12 = Item(name: "model 12", pictureName: "model 12", description: "desc for model 12", isEnabled: false)
-    var model13 = Item(name: "model 13", pictureName: "model 13", description: "desc for model 13", isEnabled: false)
-    var model14 = Item(name: "model 14", pictureName: "model 14", description: "desc for model 14", isEnabled: false)
-    var model15 = Item(name: "model 15", pictureName: "model 15", description: "desc for model 15", isEnabled: false)
+    var model1 = Item(name: "model 1", refImageName: "QR code 1", pictureName: "model 1", description: "desc for model 1", isEnabled: false)
+    var model2 = Item(name: "model 2", refImageName: "QR code 2", pictureName: "model 2", description: "desc for model 2", isEnabled: false)
+    var model3 = Item(name: "model 3", refImageName: "QR code 3", pictureName: "model 3", description: "desc for model 3", isEnabled: false)
+    var model4 = Item(name: "model 4", refImageName: "QR code 4", pictureName: "model 4", description: "desc for model 4", isEnabled: false)
+    var model5 = Item(name: "model 5", refImageName: "QR code 5", pictureName: "model 5", description: "desc for model 5", isEnabled: false)
+    var model6 = Item(name: "model 6", refImageName: "QR code 6", pictureName: "model 6", description: "desc for model 6", isEnabled: false)
+    var model7 = Item(name: "model 7", refImageName: "QR code 7", pictureName: "model 7", description: "desc for model 7", isEnabled: false)
+    var model8 = Item(name: "model 8", refImageName: "QR code 8", pictureName: "model 8", description: "desc for model 8", isEnabled: false)
+    var model9 = Item(name: "model 9", refImageName: "QR code 9", pictureName: "model 9", description: "desc for model 9", isEnabled: false)
+    var model10 = Item(name: "model 10", refImageName: "QR code 10", pictureName: "model 10", description: "desc for model 10", isEnabled: false)
+    var model11 = Item(name: "model 11", refImageName: "QR code 11", pictureName: "model 11", description: "desc for model 11", isEnabled: false)
+    var model12 = Item(name: "model 12", refImageName: "QR code 12", pictureName: "model 12", description: "desc for model 12", isEnabled: false)
+    var model13 = Item(name: "model 13", refImageName: "QR code 13", pictureName: "model 13", description: "desc for model 13", isEnabled: false)
+    var model14 = Item(name: "model 14", refImageName: "QR code 14", pictureName: "model 14", description: "desc for model 14", isEnabled: false)
+    var model15 = Item(name: "model 15", refImageName: "QR code 15", pictureName: "model 15", description: "desc for model 15", isEnabled: false)
     
     // Groups of items
     var itemSet1 = [Item]()
@@ -187,8 +187,10 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
     }
     
     func unlockItem(_ itemName: String) {
+        print("reached this pointx`")
+        print(itemSetAll)
         for index in 0...(itemSetAll.count - 1) {
-            if itemSetAll[index].name == itemName {
+            if itemSetAll[index].refImage == itemName {
                 itemSetAll[index].isEnabled = true
             }
         }
