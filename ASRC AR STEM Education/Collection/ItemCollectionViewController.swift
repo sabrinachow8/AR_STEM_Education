@@ -187,8 +187,6 @@ class ItemCollectionViewController: UIViewController, UICollectionViewDataSource
     }
     
     func unlockItem(_ itemName: String) {
-        print("reached this pointx`")
-        print(itemSetAll)
         for index in 0...(itemSetAll.count - 1) {
             if itemSetAll[index].refImage == itemName {
                 itemSetAll[index].isEnabled = true
