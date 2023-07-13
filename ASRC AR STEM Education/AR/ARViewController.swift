@@ -20,15 +20,49 @@ class ARViewController: UIViewController, ARSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionViewController = (self.tabBarController?.viewControllers?[1] as! ItemCollectionViewController)
+        self.collectionViewController = (self.tabBarController?.viewControllers?[0] as! ItemCollectionViewController)
         
         arView.session.delegate = self
         
-        let content = try! TestingSPHERE.loadSphere()
-        arView.scene.anchors.append(content)
+        // Load all the AR models from the Reality Composer project
         
-        let content2 = try! TestingSPHERE.loadShape()
+        // Protein structure:
+        let content = try! ARModels.loadScene1()
+        arView.scene.anchors.append(content)
+        let content2 = try! ARModels.loadScene2()
         arView.scene.anchors.append(content2)
+        let content3 = try! ARModels.loadScene3()
+        arView.scene.anchors.append(content3)
+        let content4 = try! ARModels.loadScene4()
+        arView.scene.anchors.append(content4)
+        let content5 = try! ARModels.loadScene5()
+        arView.scene.anchors.append(content5)
+        
+        // Crystallization:
+        let content6 = try! ARModels.loadScene6()
+        arView.scene.anchors.append(content6)
+        let content7 = try! ARModels.loadScene7()
+        arView.scene.anchors.append(content7)
+        let content8 = try! ARModels.loadScene8()
+        arView.scene.anchors.append(content8)
+        let content9 = try! ARModels.loadScene9()
+        arView.scene.anchors.append(content9)
+        
+        // ASRC:
+        let content10 = try! ARModels.loadScene10()
+        arView.scene.anchors.append(content10)
+        let content11 = try! ARModels.loadScene11()
+        arView.scene.anchors.append(content11)
+        let content12 = try! ARModels.loadScene12()
+        arView.scene.anchors.append(content12)
+        
+        // extras:
+//        let content13 = try! ARModels.loadScene13()
+//        arView.scene.anchors.append(content13)
+//        let content14 = try! ARModels.loadScene14()
+//        arView.scene.anchors.append(content14)
+//        let content15 = try! ARModels.loadScene15()
+//        arView.scene.anchors.append(content15)
     }
 
     
@@ -43,7 +77,7 @@ class ARViewController: UIViewController, ARSessionDelegate {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        // currentName format is like: reality:TestingSPHERE.reality/assets/QR code 1_6f326651.png
+        // currentName format is like: reality:ARModels.reality/assets/QR code 1_6f326651.png
         
         // Remove the underscore and everything after
         let underscoreIndex = self.currentName.firstIndex(of: "_")

@@ -14,7 +14,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionViewController = (self.tabBarController?.viewControllers?[1] as! ItemCollectionViewController)
+        self.collectionViewController = (self.tabBarController?.viewControllers?[0] as! ItemCollectionViewController)
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {

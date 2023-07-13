@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A054DBA2A564F7300498319 /* TestingSPHERE.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8A054DB92A564F7300498319 /* TestingSPHERE.rcproject */; };
+		8A054DBA2A564F7300498319 /* ARModels.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8A054DB92A564F7300498319 /* ARModels.rcproject */; };
 		8A7A57BD2A42095C003F4484 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A57BC2A42095B003F4484 /* ItemCollectionViewController.swift */; };
 		8A7A57BF2A423930003F4484 /* ItemCellView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A57BE2A423930003F4484 /* ItemCellView2.swift */; };
 		8A7A57C12A423941003F4484 /* ItemCellView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A57C02A423941003F4484 /* ItemCellView3.swift */; };
@@ -45,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A054DB92A564F7300498319 /* TestingSPHERE.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = TestingSPHERE.rcproject; path = ../../TestingSPHERE.rcproject; sourceTree = "<group>"; };
+		8A054DB92A564F7300498319 /* ARModels.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = ARModels.rcproject; path = ../../ARModels.rcproject; sourceTree = "<group>"; };
 		8A7A57BC2A42095B003F4484 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
 		8A7A57BE2A423930003F4484 /* ItemCellView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellView2.swift; sourceTree = "<group>"; };
 		8A7A57C02A423941003F4484 /* ItemCellView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellView3.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				8A88EAD82A45E7FD0072D13E /* AR */,
 				8A7A57C22A423AE4003F4484 /* Collection */,
 				8A96A6032A3A06A200E79405 /* SettingsViewController.swift */,
-				8A054DB92A564F7300498319 /* TestingSPHERE.rcproject */,
+				8A054DB92A564F7300498319 /* ARModels.rcproject */,
 				8A96A6052A3A06A200E79405 /* Main.storyboard */,
 				8A96A6082A3A06A300E79405 /* Assets.xcassets */,
 				8A96A60A2A3A06A300E79405 /* LaunchScreen.storyboard */,
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA82B5C2A433D0400512199 /* Item.swift in Sources */,
-				8A054DBA2A564F7300498319 /* TestingSPHERE.rcproject in Sources */,
+				8A054DBA2A564F7300498319 /* ARModels.rcproject in Sources */,
 				8AF13DF72A3B879600921051 /* ARItemView.swift in Sources */,
 				8A96A6042A3A06A200E79405 /* SettingsViewController.swift in Sources */,
 				8A7A57BF2A423930003F4484 /* ItemCellView2.swift in Sources */,

@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "QR code 1.png",
+      "filename" : "QR code 5 (1).png",
       "idiom" : "universal"
     }
   ],
@@ -11,6 +11,6 @@
   },
   "properties" : {
     "unit" : "inches",
-    "width" : 5
+    "width" : 1.9685039370078743
   }
 }
