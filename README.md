@@ -1,4 +1,4 @@
-# AR_STEM_Education 🤓📱🧬
+# iOS Augmented Reality IlluminationSpace Tour 🤓📱🧬
 
 The AR STEM Education project is an iOS application created in XCode to be an immersive and interactive learning experience. This was specifically coded to be used in the CUNY Advanced Science Research Center (ASRC) as a part of the outreach program. 
 
